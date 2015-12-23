@@ -1,0 +1,300 @@
+<resources>
+    <string name="app_name">CodeBook</string>
+
+    <string name="title_activity_the_book">TheBook</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string-array name="polaris1119">
+        <item>作者:polaris</item>
+        <item>GithubID:polaris1119</item>
+        <item>项目:The-Golang-Standard-Library-by-Example</item>
+        <item>进度:30%</item>
+        <!--<item>鼓励原作者\译者：打赏，留言</item>-->
+    </string-array>
+    <string-array name="gostdlib">
+        <item>第一章 输入输出(Input/Output)</item>
+        <item>io — 基本的IO接口</item>
+        <item>ioutil — 方便的IO操作函数集</item>
+        <item>fmt — 格式化IO</item>
+        <item>bufio — 缓存IO</item>
+        <item>第二章 文本</item>
+        <item>strings — 字符串操作</item>
+        <item>bytes — byte slice 便利操作</item>
+        <item>strconv — 字符串和基本数据类型之间转换</item>
+        <item>regexp — 正则表达式</item>
+        <item>unicode — Unicode码点、UTF-8/16编码</item>
+        <item>第三章 数据结构与算法</item>
+        <item>sort — 排序算法</item>
+        <item>努力翻译中。。。</item>
+        <item>container — 容器数据类型：heap、list和ring</item>
+    </string-array>
+
+    <string-array name="gostdlibUrl">
+        <item>chapter01/01.0.md</item>
+        <item>chapter01/01.1.md</item>
+        <item>chapter01/01.2.md</item>
+        <item>chapter01/01.3.md</item>
+        <item>chapter01/01.4.md</item>
+        <item>chapter02/02.0.md</item>
+        <item>chapter02/02.1.md</item>
+        <item>chapter02/02.2.md</item>
+        <item>chapter02/02.3.md</item>
+        <item>chapter02/02.4.md</item>
+        <item>chapter02/02.5.md</item>
+        <item>chapter03/03.0.md</item>
+        <item>chapter03/03.1.md</item>
+        <item>chapter03/03.2.md</item>
+        <item>chapter03/03.3.md</item>
+    </string-array>
+    <string-array name="directorytitle">
+        <item>前言</item>
+        <item>0.1 Go语言起源</item>
+        <item>0.2 Go语言项目</item>
+        <item>0.3 本书的组织</item>
+        <item>0.4 更多的信息</item>
+        <item>0.5 致谢</item>
+        <item>入门</item>
+        <item>1.1 Hello, World</item>
+        <item>1.2 命令行参数</item>
+        <item>1.3 查找重复的行</item>
+        <item>1.4 GIF动画</item>
+        <item>1.5 获取URL</item>
+        <item>1.6 并发获取多个URL</item>
+        <item>1.7 Web服务</item>
+        <item>1.8 本章要点</item>
+        <item>程序结构</item>
+        <item>2.1 命名</item>
+        <item>2.2 声明</item>
+        <item>2.3 变量</item>
+        <item>2.4 赋值</item>
+        <item>2.5 类型</item>
+        <item>2.6 包和文件</item>
+        <item>2.7 作用域</item>
+        <item>基础数据类型</item>
+        <item>3.1 整型</item>
+        <item>3.2 浮点数</item>
+        <item>3.3 复数</item>
+        <item>3.4 布尔型</item>
+        <item>3.5 字符串</item>
+        <item>3.6 常量</item>
+        <item>复合数据类型</item>
+        <item>4.1 数组</item>
+        <item>4.2 切片</item>
+        <item>4.3 字典</item>
+        <item>4.4 结构体</item>
+        <item>4.5 JSON</item>
+        <item>4.6 文本和HTML模板</item>
+        <item>函数</item>
+        <item>5.1 函数声明</item>
+        <item>5.2 递归</item>
+        <item>5.3 多返回值</item>
+        <item>5.4 错误</item>
+        <item>5.5 函数值</item>
+        <item>5.6 匿名函数</item>
+        <item>5.7 可变参数</item>
+        <item>5.8 Deferred函数</item>
+        <item>5.9 Panic异常</item>
+        <item>5.10 Recover捕获异常</item>
+        <item>方法</item>
+        <item>6.1 方法声明</item>
+        <item>6.2 基于指针对象的方法</item>
+        <item>6.3 通过嵌入结构体来扩展类型</item>
+        <item>6.4 方法值和方法表达式</item>
+        <item>6.5 示例: Bit数组</item>
+        <item>6.6 封装</item>
+        <item>接口</item>
+        <item>7.1 接口是合约</item>
+        <item>7.2 接口类型</item>
+        <item>7.3 实现接口的条件</item>
+        <item>7.4 flag.Value接口</item>
+        <item>7.5 接口值</item>
+        <item>7.6 sort.Interface接口</item>
+        <item>7.7 http.Handler接口</item>
+        <item>7.8 error接口</item>
+        <item>7.9 示例: 表达式求值</item>
+        <item>7.10 类型断言</item>
+        <item>7.11 基于类型断言识别错误类型</item>
+        <item>7.12 通过类型断言查询接口</item>
+        <item>7.13 类型分支</item>
+        <item>7.14 示例: 基于标记的XML解码</item>
+        <item>7.15 补充几点</item>
+        <item>Goroutines和Channels</item>
+        <item>8.1 Goroutines</item>
+        <item>8.2 示例: 并发的Clock服务</item>
+        <item>8.3 示例: 并发的Echo服务</item>
+        <item>8.4 Channels</item>
+        <item>8.5 并行的循环</item>
+        <item>8.6 示例: 并发的Web爬虫</item>
+        <item>8.7 基于select的多路复用</item>
+        <item>8.8 示例: 并发的字典遍历</item>
+        <item>8.9 并发的退出</item>
+        <item>8.10 示例: 聊天服务</item>
+        <item>9 基于共享变量的并发</item>
+        <item>9.1 竞争条件</item>
+        <item>9.2 sync.Mutex互斥锁</item>
+        <item>9.3 sync.RWMutex读写锁</item>
+        <item>9.4 内存同步</item>
+        <item>9.5 sync.Once初始化</item>
+        <item>9.6 竞争条件检测</item>
+        <item>9.7 示例: 并发的非阻塞缓存</item>
+        <item>9.8 Goroutines和线程</item>
+        <item>10 包和工具</item>
+        <item>10.1 简介</item>
+        <item>10.2 导入路径</item>
+        <item>10.3 包声明</item>
+        <item>10.4 导入声明</item>
+        <item>10.5 匿名导入</item>
+        <item>10.6 包和命名</item>
+        <item>10.7 工具</item>
+        <item>测试</item>
+        <item>11.1 go test</item>
+        <item>11.2 测试函数</item>
+        <item>11.3 测试覆盖率</item>
+        <item>11.4 基准测试</item>
+        <item>11.5 剖析</item>
+        <item>11.6 示例函数</item>
+        <item>反射</item>
+        <item>12.1 为何需要反射?</item>
+        <item>12.2 reflect.Type和reflect.Value</item>
+        <item>12.3 Display递归打印</item>
+        <item>12.4 示例: 编码S表达式</item>
+        <item>12.5 通过reflect.Value修改值</item>
+        <item>12.6 示例: 解码S表达式</item>
+        <item>12.7 获取结构体字段标识</item>
+        <item>12.8 显示一个类型的方法集</item>
+        <item>12.9 几点忠告</item>
+        <item>底层编程</item>
+        <item>13.1 unsafe.Sizeof, Alignof 和 Offsetof</item>
+        <item>13.2 unsafe.Pointer</item>
+        <item>13.3 示例: 深度相等判断</item>
+        <item>13.4 通过cgo调用C代码</item>
+        <item>13.5 几点忠告</item>
+        <item>14 勘误</item>
+    </string-array>
+
+    <string-array name="directoryurl">
+        <item>index.html</item>
+        <item>ch0/ch0-01.html</item>
+        <item>ch0/ch0-02.html</item>
+        <item>ch0/ch0-03.html</item>
+        <item>ch0/ch0-04.html</item>
+        <item>ch0/ch0-05.html</item>
+        <item>ch1/ch1.html</item>
+        <item>ch1/ch1-01.html</item>
+        <item>ch1/ch1-02.html</item>
+        <item>ch1/ch1-03.html</item>
+        <item>ch1/ch1-04.html</item>
+        <item>ch1/ch1-05.html</item>
+        <item>ch1/ch1-06.html</item>
+        <item>ch1/ch1-07.html</item>
+        <item>ch1/ch1-08.html</item>
+        <item>ch2/ch2.html</item>
+        <item>ch2/ch2-01.html</item>
+        <item>ch2/ch2-02.html</item>
+        <item>ch2/ch2-03.html</item>
+        <item>ch2/ch2-04.html</item>
+        <item>ch2/ch2-05.html</item>
+        <item>ch2/ch2-06.html</item>
+        <item>ch2/ch2-07.html</item>
+        <item>h3/ch3.html</item>
+        <item>h3/ch3-01.html</item>
+        <item>h3/ch3-02.html</item>
+        <item>h3/ch3-03.html</item>
+        <item>h3/ch3-04.html</item>
+        <item>h3/ch3-05.html</item>
+        <item>h3/ch3-06.html</item>
+        <item>ch4/ch4.html</item>
+        <item>ch4/ch4-01.html</item>
+        <item>ch4/ch4-02.html</item>
+        <item>ch4/ch4-03.html</item>
+        <item>ch4/ch4-04.html</item>
+        <item>ch4/ch4-05.html</item>
+        <item>ch4/ch4-06.html</item>
+        <item>ch5/ch5.html</item>
+        <item>ch5/ch5-01.html</item>
+        <item>ch5/ch5-02.html</item>
+        <item>ch5/ch5-03.html</item>
+        <item>ch5/ch5-04.html</item>
+        <item>ch5/ch5-05.html</item>
+        <item>ch5/ch5-06.html</item>
+        <item>ch5/ch5-07.html</item>
+        <item>ch5/ch5-08.html</item>
+        <item>ch5/ch5-09.html</item>
+        <item>ch5/ch5-10.html</item>
+        <item>ch6/ch6.html</item>
+        <item>ch6/ch6-01.html</item>
+        <item>ch6/ch6-02.html</item>
+        <item>ch6/ch6-03.html</item>
+        <item>ch6/ch6-04.html</item>
+        <item>ch6/ch6-05.html</item>
+        <item>ch6/ch6-06.html</item>
+        <item>ch7/ch7.html</item>
+        <item>ch7/ch7-01.html</item>
+        <item>ch7/ch7-02.html</item>
+        <item>ch7/ch7-03.html</item>
+        <item>ch7/ch7-04.html</item>
+        <item>ch7/ch7-05.html</item>
+        <item>ch7/ch7-06.html</item>
+        <item>ch7/ch7-07.html</item>
+        <item>ch7/ch7-08.html</item>
+        <item>ch7/ch7-09.html</item>
+        <item>ch7/ch7-10.html</item>
+        <item>ch7/ch7-11.html</item>
+        <item>ch7/ch7-12.html</item>
+        <item>ch7/ch7-13.html</item>
+        <item>ch7/ch7-14.html</item>
+        <item>ch7/ch7-15.html</item>
+        <item>ch8/ch8.html</item>
+        <item>ch8/ch8-01.html</item>
+        <item>ch8/ch8-02.html</item>
+        <item>ch8/ch8-03.html</item>
+        <item>ch8/ch8-04.html</item>
+        <item>ch8/ch8-05.html</item>
+        <item>ch8/ch8-06.html</item>
+        <item>ch8/ch8-07.html</item>
+        <item>ch8/ch8-08.html</item>
+        <item>ch8/ch8-09.html</item>
+        <item>ch8/ch8-10.html</item>
+        <item>ch9/ch9.html</item>
+        <item>ch9/ch9-01.html</item>
+        <item>ch9/ch9-02.html</item>
+        <item>ch9/ch9-03.html</item>
+        <item>ch9/ch9-04.html</item>
+        <item>ch9/ch9-05.html</item>
+        <item>ch9/ch9-06.html</item>
+        <item>ch9/ch9-07.html</item>
+        <item>ch9/ch9-08.html</item>
+        <item>ch10/ch10.html</item>
+        <item>ch10/ch10-01.html</item>
+        <item>ch10/ch10-02.html</item>
+        <item>ch10/ch10-03.html</item>
+        <item>ch10/ch10-04.html</item>
+        <item>ch10/ch10-05.html</item>
+        <item>ch10/ch10-06.html</item>
+        <item>ch10/ch10-07.html</item>
+        <item>ch11/ch11.html</item>
+        <item>ch11/ch11-01.html</item>
+        <item>ch11/ch11-02.html</item>
+        <item>ch11/ch11-03.html</item>
+        <item>ch11/ch11-04.html</item>
+        <item>ch11/ch11-05.html</item>
+        <item>ch11/ch11-06.html</item>
+        <item>ch12/ch12.html</item>
+        <item>ch12/ch12-01.html</item>
+        <item>ch12/ch12-02.html</item>
+        <item>ch12/ch12-03.html</item>
+        <item>ch12/ch12-04.html</item>
+        <item>ch12/ch12-05.html</item>
+        <item>ch12/ch12-06.html</item>
+        <item>ch12/ch12-07.html</item>
+        <item>ch12/ch12-08.html</item>
+        <item>ch12/ch12-09.html</item>
+        <item>ch13/ch13.html</item>
+        <item>ch13/ch13-01.html</item>
+        <item>ch13/ch13-02.html</item>
+        <item>ch13/ch13-03.html</item>
+        <item>ch13/ch13-04.html</item>
+        <item>ch13/ch13-05.html</item>
+        <item>errata.html</item>
+    </string-array>
+</resources>
