@@ -26,9 +26,14 @@ public class TheBook extends Activity {
 
         String[] GoStdLib = getResources().getStringArray(R.array.gostdlib);
         String[] GoStdLibUrl = getResources().getStringArray(R.array.gostdlibUrl);
+
+        String[] thewaytogo = getResources().getStringArray(R.array.thewaytogo);
+        String[] thewaytogoUrls = getResources().getStringArray(R.array.thewaytogoUrls);
+
         final String[][][] theBook = {
                 {GoBible,GoBibleUrl},
-                {GoStdLib,GoStdLibUrl}
+                {GoStdLib,GoStdLibUrl},
+                {thewaytogo,thewaytogoUrls}
         };
         Intent intent = getIntent();
         final int bookNum = intent.getIntExtra("bookNum", -1);

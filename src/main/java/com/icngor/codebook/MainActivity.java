@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,15 +23,17 @@ public class MainActivity extends OldActivity {
     private GridView gridView;
     private List<BooksInfo> list = new ArrayList<>();
     private ImageButton imageButton;
-    private String[] BookName ={"Go圣经","Go标准库"};
+    private String[] BookName ={"Go圣经","Go标准库","Go入门指南"};
     private String[] BookUrl ={
             "http://golang-china.github.io/gopl-zh/",
-            "https://github.com/polaris1119/The-Golang-Standard-Library-by-Example/blob/master/"
+            "https://github.com/polaris1119/The-Golang-Standard-Library-by-Example/blob/master/",
+            "https://github.com/Unknwon/the-way-to-go_ZH_CN/blob/master/eBook/"
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         //升级检查
         if (NetTools.isNetworkAvailable(MainActivity.this)) {
             UpdateRequest request = new UpdateRequest(han);
