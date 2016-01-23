@@ -9,6 +9,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import DataBeans.BaseBean;
+
 /**
  * Created by root on 2015/12/8.
  */
@@ -52,7 +54,7 @@ public class BaseRequest extends Thread {
             e.printStackTrace();
         }
     }
-    public int JsonParsing(String oldJson){
-       return 0;
+    public BaseBean JsonParsing(String oldJson){
+       return null;
     }
 }

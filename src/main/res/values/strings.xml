@@ -11,6 +11,19 @@
         <item>进度:30%</item>
         <!--<item>鼓励原作者\译者：打赏，留言</item>-->
     </string-array>
+    <string-array name="Unknwon">
+        <item>作者:Unknwon</item>
+        <item>GithubID:Unknwon</item>
+        <item>项目:the-way-to-go_ZH_CN</item>
+        <item>进度:99%</item>
+    </string-array>
+    <string-array name="chai2010">
+        <item>作者:chai2010等</item>
+        <item>GithubID:golang-china</item>
+        <item>项目:gopl-zh</item>
+        <item>进度:99%</item>
+        <item>共享协议:知識共享-署名(CC-BY) 3.0協議</item>
+    </string-array>
     <string-array name="thewaytogo">
         <item>前言</item>
         <item>第一部分：学习 Go 语言(NC)</item>

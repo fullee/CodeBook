@@ -24,6 +24,7 @@ public class MainActivity extends OldActivity {
     private List<BooksInfo> list = new ArrayList<>();
     private ImageButton imageButton;
     private String[] BookName ={"Go圣经","Go标准库","Go入门指南"};
+    private int[] BookPic={R.drawable.go,R.drawable.golibs,R.drawable.thewaytogo};
     private String[] BookUrl ={
             "http://golang-china.github.io/gopl-zh/",
             "https://github.com/polaris1119/The-Golang-Standard-Library-by-Example/blob/master/",
@@ -52,7 +53,7 @@ public class MainActivity extends OldActivity {
         });
         for (int i = 0; i < BookName.length; i++) {
             BooksInfo booksInfo = new BooksInfo();
-            booksInfo.setPic(R.drawable.go);
+            booksInfo.setPic(BookPic[i]);
             booksInfo.setTitle(BookName[i]);
             booksInfo.setBookurl(BookUrl[i]);
             list.add(booksInfo);
@@ -69,15 +70,20 @@ public class MainActivity extends OldActivity {
                 startActivity(intent);
             }
         });
-        final String[] authorinfo = getResources().getStringArray(R.array.polaris1119);
+        final String[] chai2010 = getResources().getStringArray(R.array.chai2010);
+        final String[] polaris1119 = getResources().getStringArray(R.array.polaris1119);
+        final String[] unknwon = getResources().getStringArray(R.array.Unknwon);
+        final String[][] authorinfo = new String[][]{
+                chai2010,polaris1119,unknwon
+        };
         gridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
                 dialog.setTitle("著者/译者信息");
                 String authorinfos = "";
-                for (int i = 0; i < authorinfo.length; i++) {
-                    authorinfos+=authorinfo[i]+"\n";
+                for (int i = 0; i < authorinfo[position].length; i++) {
+                    authorinfos+=authorinfo[position][i]+"\n";
                 }
                 dialog.setMessage(authorinfos);
                 dialog.show();

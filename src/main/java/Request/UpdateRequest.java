@@ -5,6 +5,8 @@ import android.os.Handler;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import DataBeans.NewVersionBean;
+
 /**
  * Created by root on 2015/12/11.
  */
@@ -14,22 +16,22 @@ public class UpdateRequest extends BaseRequest {
         super("http://git.icngor.com/new.json", handler);
     }
 
-    String apkUrl = null;
-    public String getApkUrl() {
-        return apkUrl;
-    }
     @Override
-    public int JsonParsing(String oldJson) {
-        int newJson = 0;
+    public NewVersionBean JsonParsing(String oldJson) {
+        NewVersionBean versionBean = new NewVersionBean();
         try {
             JSONObject update = new JSONObject(oldJson);
             JSONObject updatex = update.getJSONObject("info");
-            apkUrl = updatex.getString("url");
-            newJson = updatex.getInt("version");
+            String apkurl = updatex.getString("url");
+            String verInfo= updatex.getString("versionInfo");
+            int verCode = updatex.getInt("version");
+            versionBean.setApkUrl(apkurl);
+            versionBean.setVersionInfo(verInfo);
+            versionBean.setVersionCode(verCode);
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        return newJson;
+        return versionBean;
     }
 
 }
