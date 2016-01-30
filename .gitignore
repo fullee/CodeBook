@@ -1,1 +1,3 @@
 /build
+#生成apk的密匙
+*.jks
