@@ -13,7 +13,7 @@ import DataBeans.NewVersionBean;
 public class UpdateRequest extends BaseRequest {
 
     public UpdateRequest(Handler handler) {
-        super("http://git.icngor.com/new.json", handler);
+        super("http://icngor.github.io/json/codebookUpdate.json", handler);
     }
 
     @Override
@@ -23,11 +23,13 @@ public class UpdateRequest extends BaseRequest {
             JSONObject update = new JSONObject(oldJson);
             JSONObject updatex = update.getJSONObject("info");
             String apkurl = updatex.getString("url");
+            String verName = updatex.getString("versionName");
             String verInfo= updatex.getString("versionInfo");
-            int verCode = updatex.getInt("version");
+            int verCode = updatex.getInt("versionCode");
             versionBean.setApkUrl(apkurl);
             versionBean.setVersionInfo(verInfo);
             versionBean.setVersionCode(verCode);
+            versionBean.setVersionName(verName);
         } catch (JSONException e) {
             e.printStackTrace();
         }

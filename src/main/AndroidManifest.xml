@@ -30,6 +30,10 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".FeedBack" />
         <activity android:name=".ReadBookBrowser" />
+        <service
+            android:name=".DownApkService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

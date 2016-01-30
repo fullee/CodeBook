@@ -7,6 +7,15 @@ public class NewVersionBean extends BaseBean{
     private int versionCode;
     private String versionInfo;
     private String apkUrl;
+    private String versionName;
+
+    public String getVersionName() {
+        return versionName;
+    }
+
+    public void setVersionName(String versionName) {
+        this.versionName = versionName;
+    }
 
     public int getVersionCode() {
         return versionCode;

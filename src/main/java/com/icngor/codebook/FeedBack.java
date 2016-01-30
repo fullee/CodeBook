@@ -25,7 +25,7 @@ public class FeedBack extends AppCompatActivity {
     public void UpdateFeedBack(View view) {
         final String content = ContentET.getText().toString();
         final String userinfo = UserinfoET.getText().toString();
-
+        boolean IsSendSuccess = false;
         new Thread(){
             @Override
             public void run() {
@@ -41,14 +41,14 @@ public class FeedBack extends AppCompatActivity {
                             "\n使用中的问题：" + content);
                     email.addTo("icngor@163.com");
                     email.send();
-                    Toast.makeText(FeedBack.this, "反馈已成功提交", Toast.LENGTH_SHORT).show();
                 } catch (EmailException e) {
-                    Toast.makeText(FeedBack.this,"提交失败",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(FeedBack.this,"提交失败",Toast.LENGTH_SHORT).show();
                     e.printStackTrace();
                 }
             }
         }.start();
-
+        Toast.makeText(FeedBack.this,"反馈成功",Toast.LENGTH_SHORT).show();
+        this.finish();
 
 
     }
